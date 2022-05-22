@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,body{
+            overflow: hidden;
+        }
+    .cartoon{
+         width:80vmin;
+         height: 80vmin;
+         background: #f007;
+         position:absolute;
+         top: 50%;
+         left:50%;
+         transform: translate(-50%,-50%);
+    }
+    .cartoon div,  
+    .cartoon div.ha::after,
+    .cartoon div.hb::before{
+        content: "";
+        display: block;
+        position: absolute;
+        box-sizing: border-box;
+
+    }
+   .body{
+       width: 40%;
+       height: 40%;
+       background: green;
+       border-radius: 50%;
+       top:20%;
+       left:50%;
+       transform: translate(-50%,0);     
+   }
+   .eye{
+       width: 5%;
+       height: 5%;
+       background: black;
+       top:0%;
+       left:25%;
+       border-radius: 50%;
+       box-shadow: 0 0 0 2vmin white;
+   }
+    
+    </style>
+</head>
+<body>
+   
+    <div class="cartoon"></div>
+    <div class="body">
+        <div class="eye"></div>
+
+        </div>
+
+</body>
+</html>

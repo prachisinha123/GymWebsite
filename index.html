@@ -1,0 +1,197 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prachi's Fiitness Club </title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai
++2&family=Courgette&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+    /* CSS reset */
+    body {
+        font-family: 'Baloo Bhaina 2', cursive;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('css/img5.jpg');
+        /* height: 4000px; */
+
+    }
+
+    .left {
+        display: inline-block;
+
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 60px;
+        top: 20px;
+    }
+
+    .left img {
+        width: 136px;
+        filter: invert(100%);
+    }
+
+    .left div {
+        line-height: 19px;
+        font-size: 26px;
+        text-align: center;
+
+
+    }
+
+    .mid {
+        display: block;
+        width: 36%;
+        margin: 29px auto;
+
+        /* border: 2px solid green; */
+        /* condition for keeping the element in centre by margin:auto */
+        /* 1)It should be display block */
+        /* 2)we have to set the width */
+        /* 3)Then we can do margin:auto */
+
+
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 43px;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+    }
+
+    .navbar {
+        display: inline-block;
+
+    }
+
+    .navbar li {
+        color: white;
+        display: inline-block;
+        font-size: 25px;
+
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: grey;
+
+    }
+
+    .btn {
+        font-family: 'Baloo Bhaina 2', cursive;
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        /* here in button it doesn't take or inherit the white color from body ,by default it takes black color, */
+        /* so we have to provide the white color to the button separately in the class of btn */
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        /* by doing this cursor:pointer,our cursor changed into hand shape when we keep at the button */
+    }
+
+    .btn:hover {
+        background-color: rgb(80, 77, 77);
+
+    }
+
+    .container {
+        border: 2px solid white;
+        margin: 106px 80px;
+        padding: 65px;
+        width: 43%;
+        border-radius: 23px;
+
+    }
+
+    .form-group input {
+        font-family: 'Baloo Bhaina 2', cursive;
+        text-align: center;
+        display: block;
+        width: 508px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 25px;
+        border-radius: 8px;
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .container button {
+        display: block;
+        width: 23%;
+        margin: 15px auto;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="css\img2.jpg" alt="">
+            <div>Harry Fitness Club</div>
+
+
+        </div>
+        <!-- mid box for buttons -->
+        <div class="mid"> 
+            <ul class="navbar">
+                <li><a herf="#" class="active">Home</a></li>
+                <!-- by giving class=active means if we move our cursor at home then,home mera alag sai dekhai -->
+                <li><a herf="#">About Us</a></li>
+                <li><a herf="#">Fitness Calculator</a></li>
+                <li><a herf="#">Contact Us</a></li>
+            </ul>
+
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn"> Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Bangalore now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Location">
+            </div>
+            <button class="btn"> Submit</button>
+        </form>
+    </div>
+
+
+
+</body>
+
+</html>
